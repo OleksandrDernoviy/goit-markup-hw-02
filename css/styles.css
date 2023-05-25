@@ -1,32 +1,45 @@
 :root {
 
 }
-body {font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+body 
+{font-family: 'Roboto', sans-serif;
     color: #434455;
+    background-color: #FFFFFF;
 }
 .link {
         text-decoration: none;
     }
-
-    .list {
+ul {
+    list-style-type: none;
+}
+.list {
         list-style: none;
     }
+.title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #2E2F42;
+    }
+.text {
+        font-size: 16px;
+        line-height: 1.5;
+         }
 /* HEADER */
 
 .logo {
     font-weight: 800;
     font-size: 18px;
-    line-height: calc21/18;
+    line-height: 1.16;
     color: #2E2F42;
 }
 
-.logo1 {
+.logo-part {
 color: #4D5AE5;
 }
 .link-nav {
     font-weight: 500;
-    line-height: calc24/16;
+    line-height: 1.50;
     color: #2E2F42;
 }
 .link-adrs {
@@ -34,5 +47,75 @@ color: #4D5AE5;
     line-height: 1.5;
     color: #434455;
 }
+.link-adrs:active,
 .link-adrs:hover,
-.link-adrs:focus {color: tomato;}
+.link-adrs:focus {color: #404BBF;}
+
+/*!------------------ HERO ---------------------------*/
+.hero {background-color: #2E2F42;}
+
+.hero-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        Color: #FFFFFF;
+}
+
+.hero-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/*!------------------our advantages---------------------  */
+.adv {}
+
+.adv-title {}
+
+.adv-list {}
+
+.adv-item {}
+
+.adv-item-title {}
+
+
+.adv-item-text {}
+
+/*!------------------What are we doing---------------------  */
+.wawd {}
+
+.wawd-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    color: #2E2F42;
+}
+
+.wawd-list {}
+
+.waws-item {}
+
+/*!------------------Our Team-------------------------------  */
+ .team {}
+
+ .team-title {}
+
+ .team-list {}
+
+ .team-item {}
+
+ .team-item-img {}
+
+ .team-item-title {}
+
+ .team-item-text {}
+
+ .text {}
+
+
+ /*!------------------FOOTER-------------------------------  */
+
+ .footer {background-color: #2E2F42;}
+.footer-text {
+    color: #F4F4FD;}
