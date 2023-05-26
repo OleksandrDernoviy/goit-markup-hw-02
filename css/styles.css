@@ -1,6 +1,7 @@
-:root {--active-color: #404BBF;
-
-}
+:root {
+    --active-color: #404BBF;
+     --title-color: #2E2F42;
+    }
 body 
 {font-family: 'Roboto', sans-serif;
     color: #434455;
@@ -19,7 +20,7 @@ ul {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    color: #2E2F42;
+    color: var(--title-color);
     }
 .text {
     font-size: 16px;
@@ -31,7 +32,7 @@ ul {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
 .logo-part {
@@ -40,7 +41,7 @@ color: #4D5AE5;
 .link-nav {
     font-weight: 500;
     line-height: 1.50;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 .link-nav:active  {
     color: var(--active-color);
@@ -57,7 +58,9 @@ color: #4D5AE5;
 }
 
 /*!------------------ HERO ---------------------------*/
-.hero {background-color: #2E2F42;}
+.hero {
+    background-color: var(--title-color);
+}
 
 .hero-title {
     font-weight: 700;
@@ -67,6 +70,7 @@ color: #4D5AE5;
 }
 
 .hero-btn {
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -76,7 +80,7 @@ color: #4D5AE5;
 }
 .hero-btn:focus,
 .hero-btn:hover {
-    background-color:#404BBF
+    background-color: var(--active-color);
 }
 
 /*!------------------our advantages---------------------  */
@@ -100,7 +104,7 @@ color: #4D5AE5;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
 .wawd-list {}
@@ -150,13 +154,15 @@ color: #4D5AE5;
 .filter-list-item {}
         
 .filter-item-btn {
-    font-family: 'Roboto';
+    font-family: 
+        'Roboto';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
         color: #4D5AE5;
         background: #F4F4FD;
+        cursor: pointer;
 }
 .filter-item-btn:hover,
 .filter-item-btn:focus,
