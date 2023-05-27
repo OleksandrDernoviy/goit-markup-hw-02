@@ -31,6 +31,7 @@ body
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--text-color);
          }
 /* HEADER */
 
@@ -83,11 +84,13 @@ color: var(--title-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
     Color: var(--whitty-color);
 }
 
 .hero-btn {
-    font-family: 'Roboto' sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -186,16 +189,15 @@ letter-spacing: 0.02em;
 .filter-list-item {}
         
 .filter-item-btn {
-    font-family: 
-        'Roboto' sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: var(--simple-color);
-        background: #F4F4FD;
-        cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--simple-color);
+    background: #F4F4FD;
+    cursor: pointer;
 }
 .filter-item-btn:hover,
 .filter-item-btn:focus,
