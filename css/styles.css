@@ -1,18 +1,21 @@
 :root {
     --active-color: #404BBF;
-     --title-color: #2E2F42;
+    --title-color: #2E2F42;
+    --simple-color: #4D5AE5;
+    --text-color: #434455;
+    --whitty-color: #FFFFFF;
+    --darwhit-color: #F4F4FD;
     }
 body 
-{font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFFFFF;
+{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--whitty-color);
 }
 .link {
         text-decoration: none;
     }
-ul {
-    list-style-type: none;
-}
+.ul {text-decoration: none;}
 .list {
         list-style: none;
     }
@@ -20,36 +23,50 @@ ul {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
     color: var(--title-color);
     }
 .text {
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
          }
 /* HEADER */
 
 .logo {
+    font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16;
-    color: var(--title-color);
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--simple-color)
 }
 
 .logo-part {
-color: #4D5AE5;
+color: var(--title-color);
 }
 .link-nav {
     font-weight: 500;
     line-height: 1.50;
+    letter-spacing: 0.02em;
     color: var(--title-color);
 }
-.link-nav:active  {
-    color: var(--active-color);
+.link-nav:active,
+.link-nav:hover,
+.link-nav:focus {
+     color: var(--active-color);
 }
+.adrs {
+    font-style: normal
+    }
+
 .link-adrs {
     font-style: normal;
     line-height: 1.5;
-    color: #434455;
+    letter-spacing: 0.02em;
+    color: var(--text-color)
 }
 .link-adrs:active,
 .link-adrs:hover,
@@ -66,17 +83,18 @@ color: #4D5AE5;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    Color: #FFFFFF;
+    Color: var(--whitty-color);
 }
 
 .hero-btn {
-    font-family: 'Roboto';
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--whitty-color);
+    background-color: var(--simple-color);
 }
 .hero-btn:focus,
 .hero-btn:hover {
@@ -103,7 +121,10 @@ color: #4D5AE5;
 .wawd-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.1;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--title-color);
 }
 
@@ -112,13 +133,25 @@ color: #4D5AE5;
 .waws-item {}
 
 /*!------------------Our Team-------------------------------  */
- .team {}
+ .team {
+    background-color: var(--darwhit-color);
+ }
 
- .team-title {}
+ .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+ }
 
  .team-list {}
 
- .team-item {}
+ .team-item {
+    background-color: var(--whitty-color)
+ }
 
  .team-item-img {}
 
@@ -135,48 +168,56 @@ color: #4D5AE5;
     background-color: #2E2F42;
 }
 .footer-text {
-    color: #F4F4FD;}
-    .foot {
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.16;
-        color: #F4F4FD;
+    color: var(--darwhit-color);
+letter-spacing: 0.02em;
+}
+    .foot-logo-part {
+      color: var(--darwhit-color);
     }
 
 
         /*!------------------FILTER-------------------------------  */
 .filter {}
         
-.filter-title {display: none;}
+.filter-title {}
         
-.filter-menu-list {}
+.filter-list {}
         
 .filter-list-item {}
         
 .filter-item-btn {
     font-family: 
-        'Roboto';
+        'Roboto' sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        color: #4D5AE5;
+        letter-spacing: 0.04em;
+        color: var(--simple-color);
         background: #F4F4FD;
         cursor: pointer;
 }
 .filter-item-btn:hover,
 .filter-item-btn:focus,
 .filter-item-btn:active {
-    color: #FFFFFF;
-    background: #404BBF;
+    color: var(--whitty-color);
+    background: var(--active-color);
 }
 .filter-card-list {}
-        
+
+.card-item-link:hover,
+.card-item-link:focus {
+    color: var(--active-color);
+}
+
 .card-item {}
-        
+
+.card-item-link {}
+
+
 .card-item-img {}
-        
+
 .card-item-title {}
 
 .card-item-text {}
-        
+
